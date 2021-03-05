@@ -336,15 +336,15 @@ const farms: FarmConfig[] = [
     lpSymbol: 'TOAD',
     lpAddresses: {
       97: '',
-      56: '0x22D67B3f6aCdf8c0682f6FB20590E902DeEA6BA1', // EGG-BUSD LP (BUSD-BUSD will ignore)
+      56: '0x8C1068F4e72042819106EF914390266e6d484C76', // EGG-BUSD LP (BUSD-BUSD will ignore)
     },
     tokenSymbol: 'TOAD',
     tokenAddresses: {
       97: '',
       56: '0x22D67B3f6aCdf8c0682f6FB20590E902DeEA6BA1',
     },
-    quoteTokenSymbol: QuoteToken.BNB,
-    quoteTokenAdresses: contracts.wbnb,
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
   },
 
   {
