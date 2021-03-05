@@ -303,8 +303,8 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0x23396cf899ca06c4472205fc903bdb4de249d6fc',
     },
-    quoteTokenSymbol: QuoteToken.BNB,
-    quoteTokenAdresses: contracts.wbnb,
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
   },
 
   // // We fucked up pid 11
