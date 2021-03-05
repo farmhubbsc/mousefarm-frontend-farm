@@ -554,7 +554,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'TPT',
     lpAddresses: {
       97: '',
-      56: '0xeca41281c24451168a37211f0bc2b8645af45092', // AUTO-BNB LP
+      56: '0x4db28767d1527ba545ca5bbda1c96a94ed6ff242', // AUTO-BNB LP
     },
     tokenSymbol: 'TPT',
     tokenAddresses: {
@@ -572,7 +572,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'WATCH',
     lpAddresses: {
       97: '',
-      56: '0x7a9f28eb62c791422aa23ceae1da9c847cbec9b0', // AUTO-BNB LP
+      56: '0xdc6c130299e53acd2cc2d291fa10552ca2198a6b', // AUTO-BNB LP
     },
     tokenSymbol: 'WATCH',
     tokenAddresses: {
@@ -597,8 +597,8 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0x26a5dfab467d4f58fb266648cae769503cec9580',
     },
-    quoteTokenSymbol: QuoteToken.BNB,
-    quoteTokenAdresses: contracts.wbnb,
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
   },
 
   {
@@ -608,7 +608,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'BMXX',
     lpAddresses: {
       97: '',
-      56: '0x4131b87f74415190425ccd873048c708f8005823', // AUTO-BNB LP
+      56: '0x4D5aA94Ce6BbB1BC4eb73207a5a5d4D052cFcD67', // AUTO-BNB LP
     },
     tokenSymbol: 'BMXX',
     tokenAddresses: {
@@ -626,15 +626,15 @@ const farms: FarmConfig[] = [
     lpSymbol: 'IOTX',
     lpAddresses: {
       97: '',
-      56: '0x9678e42cebeb63f23197d726b29b1cb20d0064e5', // AUTO-BNB LP
+      56: '0x36b8b28d37f93372188f2aa2507b68a5cd8b2664', // AUTO-BNB LP
     },
     tokenSymbol: 'IOTX',
     tokenAddresses: {
       97: '',
       56: '0x9678e42cebeb63f23197d726b29b1cb20d0064e5',
     },
-    quoteTokenSymbol: QuoteToken.BNB,
-    quoteTokenAdresses: contracts.wbnb,
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
   },
 
   // 33 is a pool listed above
@@ -787,15 +787,15 @@ const farms: FarmConfig[] = [
     lpSymbol: 'BOR',
     lpAddresses: {
       97: '',
-      56: '0x92d7756c60dcfd4c689290e8a9f4d263b3b32241', // BSCX-BUSD LP
+      56: '0x86e650350c40a5178a5d014ba37fe8556232b898', // BSCX-BUSD LP
     },
     tokenSymbol: 'BOR',
     tokenAddresses: {
       97: '',
       56: '0x92d7756c60dcfd4c689290e8a9f4d263b3b32241',
     },
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
   },
 
   {
@@ -805,15 +805,15 @@ const farms: FarmConfig[] = [
     lpSymbol: 'bOPEN',
     lpAddresses: {
       97: '',
-      56: '0xF35262a9d427F96d2437379eF090db986eaE5d42', // BSCX-BUSD LP
+      56: '0x9d8b7e4a9d53654d82f12c83448d8f92732bc761', // BSCX-BUSD LP
     },
     tokenSymbol: 'bOPEN',
     tokenAddresses: {
       97: '',
       56: '0xF35262a9d427F96d2437379eF090db986eaE5d42',
     },
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
   },
 
   {
@@ -823,15 +823,15 @@ const farms: FarmConfig[] = [
     lpSymbol: 'DODO',
     lpAddresses: {
       97: '',
-      56: '0x67ee3cb086f8a16f34bee3ca72fad36f7db929e2', // BSCX-BUSD LP
+      56: '0x9e642d174b14faea31d842dc83037c42b53236e6', // BSCX-BUSD LP
     },
     tokenSymbol: 'DODO',
     tokenAddresses: {
       97: '',
       56: '0x67ee3cb086f8a16f34bee3ca72fad36f7db929e2',
     },
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
   },
 
   {
@@ -841,15 +841,15 @@ const farms: FarmConfig[] = [
     lpSymbol: 'SWINGBY',
     lpAddresses: {
       97: '',
-      56: '0x71de20e0c4616e7fcbfdd3f875d568492cbe4739', // BSCX-BUSD LP
+      56: '0x4576C456AF93a37a096235e5d83f812AC9aeD027', // BSCX-BUSD LP
     },
     tokenSymbol: 'SWINGBY',
     tokenAddresses: {
       97: '',
       56: '0x71de20e0c4616e7fcbfdd3f875d568492cbe4739',
     },
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
   },
 
   {
@@ -859,15 +859,15 @@ const farms: FarmConfig[] = [
     lpSymbol: 'BRY',
     lpAddresses: {
       97: '',
-      56: '0xf859Bf77cBe8699013d6Dbc7C2b926Aaf307F830', // BSCX-BUSD LP
+      56: '0x5E3CD27F36932Bc0314aC4e2510585798C34a2fC', // BSCX-BUSD LP
     },
     tokenSymbol: 'BRY',
     tokenAddresses: {
       97: '',
       56: '0xf859Bf77cBe8699013d6Dbc7C2b926Aaf307F830',
     },
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
   },
 
   // {
