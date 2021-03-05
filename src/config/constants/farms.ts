@@ -22,6 +22,26 @@ const farms: FarmConfig[] = [
   },
 
   {
+    pid: 47,
+    risk: 5,
+    isTokenOnly: true,
+    lpSymbol: 'MOUSE',
+    lpAddresses: {
+      97: '',
+      56: '0xfacd0bec1ea57997dbb28e1d0d4894bc0c0ee184',
+    },
+    tokenSymbol: 'MOUSE',
+    tokenAddresses: {
+      97: '',
+      56: '0x71F2f0ce6e858de06e94aad9eF0cD4FFFa298034',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },
+
+  
+
+  {
     pid: 1,
     risk: 5,
     lpSymbol: 'MOUSE-BUSD LP',
@@ -174,7 +194,7 @@ const farms: FarmConfig[] = [
   {
     pid: 9,
     risk: 1,
-    lpSymbol: 'WATCH-BUSD LP',
+    lpSymbol: 'WATCH-BNB LP',
     lpAddresses: {
       97: '',
       56: '0xdc6c130299e53acd2cc2d291fa10552ca2198a6b',
@@ -184,8 +204,8 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0x7a9f28eb62c791422aa23ceae1da9c847cbec9b0',
     },
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
   },
 
   {
