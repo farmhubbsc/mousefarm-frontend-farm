@@ -31,9 +31,9 @@ const config: MenuEntry[] = [
     href: '/nests',
   },
   // {
-  //   label: 'Memes',
+  //   label: 'Leaderboard',
   //   icon: 'SunIcon',
-  //   href: '/memes',
+  //   href: '/leaderboard',
   // },
   // {
   //   label: 'Pools',
