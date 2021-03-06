@@ -14,6 +14,7 @@ import NftGlobalNotification from './views/Nft/components/NftGlobalNotification'
 const Home = lazy(() => import('./views/Home'))
 const Farms = lazy(() => import('./views/Farms'))
 const Memes = lazy(() => import('./views/Memes'))
+const Leaderboard = lazy(() => import('./views/Leaderboard'))
 // const Lottery = lazy(() => import('./views/Lottery'))
 // const Pools = lazy(() => import('./views/Pools'))
 // const Ifos = lazy(() => import('./views/Ifos'))
@@ -55,6 +56,9 @@ const App: React.FC = () => {
             <Route path="/memes">
               <Memes />
             </Route>
+            <Route path="/leaderboard">
+              <Leaderboard />
+            </Route>    
             {/* <Route path="/pools"> */}
             {/*  <Pools /> */}
             {/* </Route> */}

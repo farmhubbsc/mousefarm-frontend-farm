@@ -554,7 +554,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'TPT',
     lpAddresses: {
       97: '',
-      56: '0x4db28767d1527ba545ca5bbda1c96a94ed6ff242', // AUTO-BNB LP
+      56: '0xeca41281c24451168a37211f0bc2b8645af45092', // AUTO-BNB LP
     },
     tokenSymbol: 'TPT',
     tokenAddresses: {
