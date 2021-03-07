@@ -547,23 +547,23 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wbnb,
   },
 
-  // {
-  //   pid: 28,
-  //   risk: 3,
-  //   isTokenOnly: true,
-  //   lpSymbol: 'TPT',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xeca41281c24451168a37211f0bc2b8645af45092', // AUTO-BNB LP
-  //   },
-  //   tokenSymbol: 'TPT',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0xeca41281c24451168a37211f0bc2b8645af45092',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BNB,
-  //   quoteTokenAdresses: contracts.wbnb,
-  // },
+  {
+    pid: 28,
+    risk: 3,
+    isTokenOnly: true,
+    lpSymbol: 'TPT',
+    lpAddresses: {
+      97: '',
+      56: '0xeca41281c24451168a37211f0bc2b8645af45092', // AUTO-BNB LP
+    },
+    tokenSymbol: 'TPT',
+    tokenAddresses: {
+      97: '',
+      56: '0xeca41281c24451168a37211f0bc2b8645af45092',
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
+  },
 
   {
     pid: 29,
