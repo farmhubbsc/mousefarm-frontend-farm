@@ -79,7 +79,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: "Github",
-        href: "https://github.com/FrensFarm",
+        href: "https://github.com/farmhubbsc",
       },
       // {
       //   label: "Docs",
