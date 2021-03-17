@@ -282,15 +282,15 @@ const farms: FarmConfig[] = [
     lpSymbol: 'SUSHI-ETH LP',
     lpAddresses: {
       97: '',
-      56: '0x70D8929d04b60Af4fb9B58713eBcf18765aDE422',
+      56: '0x17580340F3dAEDAE871a8C21D15911742ec79e0F',
     },
     tokenSymbol: 'SUSHI',
     tokenAddresses: {
       97: '',
       56: '0x947950bcc74888a40ffa2593c5798f11fc9124c4',
     },
-    quoteTokenSymbol: QuoteToken.BNB,
-    quoteTokenAdresses: contracts.wbnb,
+    quoteTokenSymbol: QuoteToken.ETH,
+    quoteTokenAdresses: contracts.eth,
   },
 
   {
@@ -299,15 +299,15 @@ const farms: FarmConfig[] = [
     lpSymbol: 'ETH-BETH LP',
     lpAddresses: {
       97: '',
-      56: '0x70D8929d04b60Af4fb9B58713eBcf18765aDE422',
+      56: '0x99d865Ed50D2C32c1493896810FA386c1Ce81D91',
     },
     tokenSymbol: 'BETH',
     tokenAddresses: {
       97: '',
       56: '0x250632378e573c6be1ac2f97fcdf00515d0aa91b',
     },
-    quoteTokenSymbol: QuoteToken.BNB,
-    quoteTokenAdresses: contracts.wbnb,
+    quoteTokenSymbol: QuoteToken.ETH,
+    quoteTokenAdresses: contracts.eth,
   },
 
   {

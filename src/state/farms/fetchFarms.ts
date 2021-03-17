@@ -92,17 +92,6 @@ const fetchFarms = async () => {
           tokenPriceVsQuote = new BigNumber(quoteTokenBlanceLP).div(new BigNumber(tokenBalanceLP));
         }
 
-        if( farmConfig.lpSymbol === 'TOAD-BNB LP' ) {
-            // console.log( lpTokenBalanceMC )
-            // console.log( lpTokenRatio )
-            // console.log(quoteTokenBlanceLP) // Toad in LP contract ook 
-            // console.log(tokenBalanceLP) // TOAD in LP contract
-            // console.log(tokenAmount.toJSON())
-            // console.log("^ditte")
-            console.log(lpTotalInQuoteToken.toJSON())
-            console.log("AAHH")
-        }
-
       }
 
       const [info, totalAllocPoint, mousePerBlock] = await multicall(masterchefABI, [
