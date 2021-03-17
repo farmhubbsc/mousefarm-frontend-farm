@@ -7,6 +7,11 @@ const config: MenuEntry[] = [
     href: '/',
   },
   {
+    label: 'Farmhub',
+    icon: 'NftIcon',
+    href: 'https://farmhub.community',
+  },
+  {
     label: 'Trade',
     icon: 'TradeIcon',
     items: [
@@ -34,6 +39,11 @@ const config: MenuEntry[] = [
   //   label: 'Leaderboard',
   //   icon: 'SunIcon',
   //   href: '/leaderboard',
+  // },
+  // {
+  //   label: 'Layered Farming',
+  //   icon: 'HamburgerIcon',
+  //   href: '/layered',
   // },
   // {
   //   label: 'Pools',

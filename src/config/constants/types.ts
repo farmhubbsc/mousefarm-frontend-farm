@@ -26,6 +26,7 @@ export enum QuoteToken {
   'BUSD' = 'BUSD',
   'TWT' = 'TWT',
   'UST' = 'UST',
+  'ETH' = 'ETH',
 }
 
 export enum PoolCategory {
@@ -49,6 +50,7 @@ export interface FarmConfig {
   quoteTokenAdresses: Address
   multiplier?: string
   isTokenOnly?: boolean
+  isLayer1?: boolean
   isCommunity?: boolean
   risk: number
   dual?: {

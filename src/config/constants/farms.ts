@@ -282,7 +282,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'SUSHI-ETH LP',
     lpAddresses: {
       97: '',
-      56: '0x17580340f3daedae871a8c21d15911742ec79e0f',
+      56: '0x70D8929d04b60Af4fb9B58713eBcf18765aDE422',
     },
     tokenSymbol: 'SUSHI',
     tokenAddresses: {
@@ -299,7 +299,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'ETH-BETH LP',
     lpAddresses: {
       97: '',
-      56: '0x99d865ed50d2c32c1493896810fa386c1ce81d91',
+      56: '0x70D8929d04b60Af4fb9B58713eBcf18765aDE422',
     },
     tokenSymbol: 'BETH',
     tokenAddresses: {
@@ -645,7 +645,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'ETH-COMP LP',
     lpAddresses: {
       97: '',
-      56: '0x0392957571f28037607c14832d16f8b653edd472',
+      56: '0x70D8929d04b60Af4fb9B58713eBcf18765aDE422',
     },
     tokenSymbol: 'COMP',
     tokenAddresses: {
@@ -869,6 +869,25 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
   },
+
+  // {
+  //   pid: 47,
+  //   risk: 3,
+  //   isTokenOnly: true,
+  //   isLayer1: true,
+  //   lpSymbol: 'ML1',
+  //   lpAddresses: {
+  //     97: '',
+  //     56: '0x5E3CD27F36932Bc0314aC4e2510585798C34a2fC', // BSCX-BUSD LP
+  //   },
+  //   tokenSymbol: 'ML1',
+  //   tokenAddresses: {
+  //     97: '',
+  //     56: '0xf859Bf77cBe8699013d6Dbc7C2b926Aaf307F830',
+  //   },
+  //   quoteTokenSymbol: QuoteToken.BNB,
+  //   quoteTokenAdresses: contracts.wbnb,
+  // },
 
   // {
   //   pid: 8,

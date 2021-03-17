@@ -22,4 +22,8 @@ export default {
   busd: {
     56: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
   },
+  eth: {
+    56: '0x2170ed0880ac9a755fd29b2688956bd959f933f8',
+    97: '',
+  },
 }
