@@ -554,15 +554,15 @@ const farms: FarmConfig[] = [
     lpSymbol: 'TPT',
     lpAddresses: {
       97: '',
-      56: '0xeca41281c24451168a37211f0bc2b8645af45092', // AUTO-BNB LP
+      56: '0x4db28767D1527bA545CA5bbdA1C96a94ED6ff242', // TPT-BUSD LP
     },
     tokenSymbol: 'TPT',
     tokenAddresses: {
       97: '',
       56: '0xeca41281c24451168a37211f0bc2b8645af45092',
     },
-    quoteTokenSymbol: QuoteToken.BNB,
-    quoteTokenAdresses: contracts.wbnb,
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
   },
 
   {
@@ -590,7 +590,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'XMARK',
     lpAddresses: {
       97: '',
-      56: '0x26a5dfab467d4f58fb266648cae769503cec9580', // AUTO-BNB LP
+      56: '0x292Ca56ED5b3330A19037f835Af4A9c0098EA6Fa', // XMARK-BUSD LP
     },
     tokenSymbol: 'XMARK',
     tokenAddresses: {
