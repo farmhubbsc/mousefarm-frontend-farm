@@ -65,7 +65,7 @@ const FCard = styled.div`
   padding: 24px;
   position: relative;
   text-align: center;
-  box-shadow: 0 0 7px 1px rgb(0 0 0 / 20%);
+  box-shadow: 0 0 21px 4px rgb(0 0 0 / 45%);
 `
 
 const Divider = styled.div`

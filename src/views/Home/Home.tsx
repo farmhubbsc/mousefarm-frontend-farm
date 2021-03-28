@@ -38,7 +38,7 @@ const Cards = styled(BaseLayout)`
   & > div {
     grid-column: span 6;
     width: 100%;
-    box-shadow: 0 0 7px 1px rgb(0 0 0 / 20%);
+    box-shadow: 0 0 21px 4px rgb(0 0 0 / 45%);
   }
 
   ${({ theme }) => theme.mediaQueries.sm} {
@@ -53,6 +53,10 @@ const Cards = styled(BaseLayout)`
     }
   }
 `
+const logoStyle = {
+  maxWidth: '50%',
+  marginTop: '2.5rem',
+}
 
 const Home: React.FC = () => {
   const TranslateString = useI18n()
@@ -61,9 +65,8 @@ const Home: React.FC = () => {
     <Page>
       <Hero>
         <Heading as="h1" size="xl" mb="24px" color="secondary">
-          {TranslateString(576, 'Mouse Farm')}
+          <img style={logoStyle} src="https://mouse.farm/images/backgrounds/mouse-logo.png" alt="Mouse farm" />
         </Heading>
-        <Text>{TranslateString(578, 'Top 3 best DEFI app on Binance Smart Chain.')}</Text>
       </Hero>
       <div>
         <Cards>

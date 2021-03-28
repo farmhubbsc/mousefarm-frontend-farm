@@ -65,6 +65,10 @@ const FarmedStakingCard = () => {
     }
   }, [onReward])
 
+  const blackCol = {
+    color: 'black',
+  }
+
   return (
     <StyledFarmStakingCard>
       <CardBody>
@@ -88,6 +92,7 @@ const FarmedStakingCard = () => {
               id="harvest-all"
               disabled={balancesWithValue.length <= 0 || pendingTx}
               onClick={harvestAllFarms}
+              style={blackCol}
               fullWidth
             >
               {pendingTx
