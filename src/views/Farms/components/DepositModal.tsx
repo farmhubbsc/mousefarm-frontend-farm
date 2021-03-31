@@ -14,6 +14,10 @@ interface DepositModalProps {
   depositFeeBP?: number
 }
 
+const buttonCol = {
+  color: 'black',
+}
+
 const DepositModal: React.FC<DepositModalProps> = ({ max, onConfirm, onDismiss, tokenName = '' , depositFeeBP = 0}) => {
   const [val, setVal] = useState('')
   const [pendingTx, setPendingTx] = useState(false)
@@ -49,6 +53,7 @@ const DepositModal: React.FC<DepositModalProps> = ({ max, onConfirm, onDismiss, 
         </Button>
         <Button
           disabled={pendingTx}
+          style={buttonCol}
           onClick={async () => {
             setPendingTx(true)
             await onConfirm(val)

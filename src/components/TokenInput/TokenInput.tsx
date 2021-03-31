@@ -12,6 +12,10 @@ interface TokenInputProps extends InputProps {
   depositFeeBP?: number
 }
 
+const buttonCol = {
+  color: 'black',
+}
+
 const TokenInput: React.FC<TokenInputProps> = ({ max, symbol, onChange, onSelectMax, value, depositFeeBP = 0 }) => {
   const TranslateString = useI18n()
   return (
@@ -25,7 +29,7 @@ const TokenInput: React.FC<TokenInputProps> = ({ max, symbol, onChange, onSelect
             <StyledTokenSymbol>{symbol}</StyledTokenSymbol>
             <StyledSpacer />
             <div>
-              <Button size="sm" onClick={onSelectMax}>
+              <Button size="sm" style={buttonCol} onClick={onSelectMax}>
                 {TranslateString(452, 'Max')}
               </Button>
             </div>

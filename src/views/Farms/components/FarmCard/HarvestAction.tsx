@@ -19,6 +19,9 @@ const BalanceAndCompound = styled.div`
   flex-direction: column;
 `
 
+
+
+
 const HarvestAction: React.FC<FarmCardActionsProps> = ({ earnings, pid }) => {
   const TranslateString = useI18n()
   const [pendingTx, setPendingTx] = useState(false)
@@ -27,6 +30,16 @@ const HarvestAction: React.FC<FarmCardActionsProps> = ({ earnings, pid }) => {
 
   const rawEarningsBalance = getBalanceNumber(earnings)
   const displayBalance = rawEarningsBalance.toLocaleString()
+
+  console.log(rawEarningsBalance)
+  
+  let buttonStyle;  
+  
+  if( rawEarningsBalance !== 0 ) {
+    buttonStyle = {
+      color: 'black',
+    }
+  }
 
   return (
     <Flex mb='8px' justifyContent='space-between' alignItems='center'>
@@ -49,6 +62,7 @@ const HarvestAction: React.FC<FarmCardActionsProps> = ({ earnings, pid }) => {
           : null}
         <Button
           disabled={rawEarningsBalance === 0 || pendingTx}
+          style={buttonStyle}
           onClick={async () => {
             setPendingTx(true)
             await onReward()
