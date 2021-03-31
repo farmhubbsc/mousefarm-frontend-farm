@@ -9,7 +9,39 @@ const config: MenuEntry[] = [
   {
     label: 'Farmhub',
     icon: 'FarmhubIcon',
-    href: 'https://farmhub.community',
+    // href: 'https://farmhub.community',
+    items: [
+      {
+        label: 'Farmhub',
+        href: 'https://farmhub.community',
+        icon: 'FarmhubIcon'
+      },
+      {
+        label: 'Toad.Farm',
+        href: 'https://toad.farm',
+        icon: 'ToadFarmIcon'
+      },
+      {
+        label: 'Mouse.Farm',
+        href: 'https://mouse.farm',
+        icon: 'MouseFarmIcon'
+      },
+      {
+        label: 'Snek.Farm',
+        href: 'https://snek.farm',
+        icon: 'SnekFarmIcon'
+      },
+      {
+        label: 'Eagle.Farm',
+        href: 'https://eagle.farm',
+        icon: 'EagleFarmIcon'
+      },
+      {
+        label: 'Eagle\'s Nest',
+        href: 'https://eaglenest.finance',
+        icon: 'EagleNestIcon'
+      },
+    ]
   },
   {
     label: 'Trade',
@@ -18,10 +50,12 @@ const config: MenuEntry[] = [
       {
         label: 'Exchange',
         href: 'https://exchange.mouse.farm/#/swap',
+        icon: 'TradeIcon',
       },
       {
         label: 'Liquidity',
         href: 'https://exchange.mouse.farm/#/pool',
+        icon: 'LiquidityIcon',
       },
     ],
   },
@@ -32,7 +66,7 @@ const config: MenuEntry[] = [
   },
   {
     label: 'Breeding Ground',
-    icon: 'MoonIcon',
+    icon: 'MouseBreeding',
     href: '/nests',
   },
   // {
@@ -90,10 +124,12 @@ const config: MenuEntry[] = [
       {
         label: "Github",
         href: "https://github.com/farmhubbsc",
+        icon: 'GithubIcon', 
       },
       {
         label: "Docs",
         href: "https://docs.farmhub.community/",
+        icon: 'BooksIcon',
       },
       // {
       //   label: "Blog",
