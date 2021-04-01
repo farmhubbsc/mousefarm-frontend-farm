@@ -87,14 +87,15 @@ export const usePriceCakeBusd = (): BigNumber => {
 }
 
 export const usePriceEthBusd = (): BigNumber => {
-  const pid = 6;
-  const farm = useFarmFromPid(6);
+  const ethBNBPid = 6; // ETH-BNB LP
+  const busdBNBPid = 2 // BUSD-BNB LP
+
+  const farm = useFarmFromPid(ethBNBPid);
   const bnbPerEth = new BigNumber( farm.tokenPriceVsQuote );
 
-  const pidBNB = 2 // BUSD-BNB LP
-  const farmBNB = useFarmFromPid(pid)
+  const farmBNB = useFarmFromPid(busdBNBPid);
   const BNBBusd = farmBNB.tokenPriceVsQuote;
-  const EthBUSD = bnbPerEth.times(BNBBusd); 
+  const EthBUSD = bnbPerEth.times(BNBBusd);
 
   return EthBUSD ? new BigNumber(EthBUSD) : ZERO;
 }
@@ -103,6 +104,7 @@ export const useTotalValue = (): BigNumber => {
   const farms = useFarms();
   const bnbPrice = usePriceBnbBusd();
   const cakePrice = usePriceCakeBusd();
+  const ethPrice = usePriceEthBusd();
   let value = new BigNumber(0);
   for (let i = 0; i < farms.length; i++) {
     const farm = farms[i]
@@ -112,6 +114,8 @@ export const useTotalValue = (): BigNumber => {
         val = (bnbPrice.times(farm.lpTotalInQuoteToken));
       }else if (farm.quoteTokenSymbol === QuoteToken.CAKE) {
         val = (cakePrice.times(farm.lpTotalInQuoteToken));
+      }else if (farm.quoteTokenSymbol === QuoteToken.ETH) {
+        val = (ethPrice.times(farm.lpTotalInQuoteToken));
       }else{
         val = (farm.lpTotalInQuoteToken);
       }
