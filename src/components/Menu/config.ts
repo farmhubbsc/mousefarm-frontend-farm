@@ -49,7 +49,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'https://exchange.mouse.farm/#/swap',
+        href: 'https://exchange.mouse.farm/#/swap?outputCurrency=0x71f2f0ce6e858de06e94aad9ef0cd4fffa298034',
         icon: 'TradeIcon',
       },
       {
