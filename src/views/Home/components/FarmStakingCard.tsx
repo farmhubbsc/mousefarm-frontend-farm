@@ -69,6 +69,14 @@ const FarmedStakingCard = () => {
     color: 'black',
   }
 
+  let harvestButtonStyle;
+
+  if( earningsSum !== 0 ) {
+    harvestButtonStyle = {
+      color: 'black',
+    }
+  }
+
   return (
     <StyledFarmStakingCard>
       <CardBody>
@@ -92,7 +100,7 @@ const FarmedStakingCard = () => {
               id="harvest-all"
               disabled={balancesWithValue.length <= 0 || pendingTx}
               onClick={harvestAllFarms}
-              style={blackCol}
+              style={harvestButtonStyle}
               fullWidth
             >
               {pendingTx
