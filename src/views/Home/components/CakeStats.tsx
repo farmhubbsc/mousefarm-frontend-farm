@@ -37,26 +37,38 @@ const CakeStats = () => {
     mousePerBlock = new BigNumber(farms[0].mousePerBlock).div(new BigNumber(10).pow(18)).toNumber();
   }
 
+  const logoStyle = {
+    maxWidth: '5%',
+    marginRight: '12px'
+  }
+
+  const txtCenter = {
+    display: 'flex',
+    alignItems: 'center',
+  }
+
+
   return (
     <StyledCakeStats>
       <CardBody>
-        <Heading size="xl" mb="24px">
+        <Heading style={txtCenter} size="xl" mb="24px">
+          <img src="https://mouse.farm/images/mouse/mouse.png" style={logoStyle} alt="snek" />
           {TranslateString(534, 'Mouse Stats')}
         </Heading>
         <Row>
-          <Text fontSize="14px">{TranslateString(536, 'Total MOUSE Supply')}</Text>
+          <Text fontSize="14px">🖇️ {TranslateString(536, 'Total MOUSE Supply')}</Text>
           {cakeSupply && <CardValue fontSize="14px" value={cakeSupply} decimals={0} />}
         </Row>
         <Row>
-          <Text fontSize="14px">{TranslateString(999, 'Market Cap')}</Text>
+          <Text fontSize="14px">📈 {TranslateString(999, 'Market Cap')}</Text>
           <CardValue fontSize="14px" value={getBalanceNumber(marketCap)} decimals={0} prefix="$" />
         </Row>
         <Row>
-          <Text fontSize="14px">{TranslateString(538, 'Total MOUSE Burned')}</Text>
+          <Text fontSize="14px">🔥 {TranslateString(538, 'Total MOUSE Burned')}</Text>
           <CardValue fontSize="14px" value={getBalanceNumber(burnedBalance)} decimals={0} />
         </Row>
         <Row>
-          <Text fontSize="14px">{TranslateString(540, 'New MOUSE/block')}</Text>
+          <Text fontSize="14px">🐣 {TranslateString(540, 'New MOUSE/block')}</Text>
           <Text bold fontSize="14px">{mousePerBlock}</Text>
         </Row>
       </CardBody>
