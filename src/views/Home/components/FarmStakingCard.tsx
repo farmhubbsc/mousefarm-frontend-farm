@@ -14,6 +14,7 @@ import useTokenBalance from '../../../hooks/useTokenBalance'
 import { getCakeAddress } from '../../../utils/addressHelpers'
 import useAllEarnings from '../../../hooks/useAllEarnings'
 import { getBalanceNumber } from '../../../utils/formatBalance'
+import './MouseBtn.css'
 
 const StyledFarmStakingCard = styled(Card)`
   background-image: url('/images/mouse/2a.png');
@@ -77,8 +78,18 @@ const FarmedStakingCard = () => {
     }
   }
 
+  const centerAlign = {
+    display: 'flex',
+    flexDirection: 'column' as any as 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+  }
+
+  const mouseBuyURL = 'https://exchange.mouse.farm/#/swap?outputCurrency=0x71F2f0ce6e858de06e94aad9eF0cD4FFFa298034'
+
   return (
     <StyledFarmStakingCard>
+    <a href={mouseBuyURL} target="_blank" rel="noreferrer" className="buy-mouse-btn" >Buy MOUSE</a>
       <CardBody>
         <Heading size="xl" mb="24px">
           {TranslateString(542, 'Farms & Staking')}
